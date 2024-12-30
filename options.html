@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>yttvfix settings</title>
+  <script src="options.js"></script>
+  <style>
+    body {
+
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+<!---
+  <label for="overrideUserAgent">Override User Agent</label>
+  <input type="checkbox" id="overrideUserAgent">
+  <br>
+--->
+
+  <label for="userAgent" >User Agent</label>
+  <br>
+  <input id="userAgent" style="width: 400px;" value="">
+  <br>
+  <br><br>
+  <label for="overrideZoom">Override Zoom</label>
+  <input cheked type="checkbox" id="overrideZoom">
+  <br>
+
+  <label for="zoomLevel">Zoom Level (%)</label>
+  <input inputmode="numeric" step="5" type="number" id="zoomLevel" min="10" max="100" value="35">
+  <br><br>
+
+  <button id="saveButton">Save</button>
+  <button id="resetButton">Reset to default</button>
+</body>
+
+</html>

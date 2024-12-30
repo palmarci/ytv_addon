@@ -1,0 +1,33 @@
+{
+	"manifest_version": 2,
+	"name": "YouTube TV Fix",
+	"short_name": "yttvfix",
+	"description": "Allows https://youtube.com/tv to load properly in high definition.",
+	"version": "1.0.0",
+	"icons": {
+		"512": "icon.png"
+	},
+	"permissions": [
+		"*://*.youtube.com/tv*",
+		"webRequest",
+		"webRequestBlocking",
+		"tabs",
+		"storage",
+		"activeTab"
+	],
+	"background": {
+		"scripts": [
+			"background.js"
+		]
+	},
+	"browser_action": {
+		"default_icon": "icon.png",
+		"default_title": "Open YT TV Fix options",
+		"default_popup": "options.html"
+	},
+	"browser_specific_settings": {
+		"gecko": {
+			"id": "{4693819d-d53c-4b66-a90e-4c5b20b7778f}"
+		}
+	}
+}
